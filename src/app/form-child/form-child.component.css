@@ -1,0 +1,70 @@
+/* Apply styles to the container */
+body {
+    padding-top: 2000px; /* Adjust the value as needed */
+}
+
+.container {
+    margin-top: 10px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+.heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style the label */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style the select input */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style the input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Style the datepicker input */
+mat-datepicker-toggle {
+    cursor: pointer;
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

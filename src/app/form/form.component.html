@@ -1,0 +1,20 @@
+<div class="grid-container">
+<mat-toolbar class="form">
+    <div class="search-bar-container ">
+        <button mat-icon-button>
+            <mat-icon>search</mat-icon>
+        </button>
+    <input #searchinput class = "input" placeholder="Search location" />
+    <button class="primary" type="button" (click)="onSearchInput(searchinput.value)">Search</button>
+    </div>
+</mat-toolbar>
+</div>
+<section>
+<div class="grid-container">
+    <app-form-child [item]="locationOptions"></app-form-child>
+</div>
+</section>
+
+  
+
+

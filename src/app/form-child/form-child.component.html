@@ -1,0 +1,41 @@
+<div class="container">
+    <h2 class="heading">Calculate Weather Data</h2>
+    <form [formGroup]="checkoutForm" (ngSubmit)="submitForm()">
+        <div class="form-group">
+            <label for="gender">location</label>
+            <select  class="form-control" id="location" formControlName="location" name="fieldName" >
+                <option [value]= "item[i].location" *ngFor="let loc of item;let i = index;"   class="group">
+                    <p><b></b>{{item[i].location}},{{loc.country}},{{loc.latitude}},{{loc.longitude}}</p>
+                </option>
+            </select>
+
+          </div>
+        
+      <div class="form-group">
+        <label for="email">Latitude</label>
+        <input type="text" id="latitude" formControlName="latitude" name="latitude" value={{selectedlatitude}}>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Longitude</label>
+        <input type="text"  id="longitude" formControlName="longitude" name="longitude" value={{selectedlongitude}}>
+      </div>
+      <div class="form-group">
+        <label for="email">Maximum temperature</label>
+        <input type="text" id="maxtemp" formControlName="max_temperature" name="max_temperature" value="0">
+      </div>
+      <div class="form-group">
+        <label for="email">Minimum temperature</label>
+        <input type="text" id="mintemp" formControlName="min_temperature" name="min_temperature" value="0">
+      </div>
+      <div class="form-group">
+        <label for="email">Start Date</label>
+        <input type="text" id="startdate" formControlName="start_date" name="start_date" value="0">
+     </div>
+     <div class="form-group">
+        <label for="email">End Date</label>
+        <input type="text" id="enddate" formControlName="end_date" name="end_date" value="0">
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
