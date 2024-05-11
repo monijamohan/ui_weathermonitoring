@@ -1,27 +1,17 @@
-# Ui
+# Angular UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
-## Development server
+- The UI project is not attached with the Backend and Backend-DB (MongoDB)running on [localhost:8000](http://localhost:8000)
+- Assuming that the Backend project is already 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Docker Build and Run Commands:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Command to build the docker image is <br>```docker build --no-cache -t angular_ui .```
 
-## Build
+Once the docker build is done,
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Command to Run the docker image,<br>```docker run -p 4200:4200 angular_ui```
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Now please check the `4200` port in your localhost. ie [localhost:4200](http://localhost:4200)
